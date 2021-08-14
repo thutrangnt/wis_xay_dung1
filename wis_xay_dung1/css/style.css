@@ -16,7 +16,7 @@
 .container__heading__right{
     display: flex;
     margin: 25px ;
-    justify-content:
+   
 }
 .upper__box{
     display: flex;
@@ -56,7 +56,7 @@
     /* background-color: var(--icon-color); */
     display: inline-block;
     text-align: center;
-    padding: 14px 16px ;
+    padding: 20px 25px ;
     font-weight: bold;
     /* border-top: 5px solid var(--icon-color) ; */
 }
@@ -103,28 +103,44 @@
     background-color: black;
 }
 /* Banner */
-.content__column{
-    background-image:  linear-gradient(0, rgba(39, 39, 38, 0.1), #333) 
-    ,url(../img/logo/banner.jpg) ;
+.content{
+    color: white;
+    background: radial-gradient(0,rgba(61, 60, 60,0.5),rgba(61, 60, 60,0.5))  ,url(../img/logo/banner.jpg) ;
     background-size: 100%;
-    /* background-repeat: no-repeat; */
-    padding:200px 100px;
-}
-.title{
-    display: inline-flex;
-}
-.title span{ 
-    color: var(--icon-color);
    
 }
+ 
+.title{
+    display: inline-flex;
+    
+}
+.title i{ 
+    color: var(--icon-color);
+    
+}
+.title p{
+    word-spacing: 2px;
+    padding-left: 8px;
+    font-weight: ;
+
+}
+.text{
+    line-height: 30px;
+}
+.content__column{
+    padding: 200px 90px; 
+    
+  }
+.content__column h1{
+    letter-spacing: 5px;
+    font-family: 
+}  
 .item_video{
     color:var(--icon-color);
     font-size: 50px;
     
 }
-.content{
-    color: white;
-}
+
 .content__btn--style{
     display: flex;
 }
@@ -141,9 +157,59 @@
 }
 /* End header */
 /* Secction */
-.grid__about{
-    grid-template-areas: 'item item' ;
+
+.col-6{
+    width :50%; 
 }
-.item1{
-    grid-area: ;
+[class*="col-"]{  
+    /* cac class co ten bat dau bang col- */
+    float: left;
+    /* padding: 15px; */
+    border:  15px  ;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.section__about{
+    padding: 100px 0;
+    position: relative;
+    /* background-color:  #777; */
+    background-clip:padding-box;
+}
+.grid__about{
+    background-color: rgba(60,60,60,0.1);
+}
+.item__about{
+    padding: 70px 30px;
+    
+}
+.item__about a{
+    border-top-left-radius: 10px ;
+    border: ;
+}
+.item__about h1{
+    letter-spacing: 3px;
+    padding: 30px 0;
+}
+.item__about--img img{
+    width: 100%;
+    
+}
+.box__about{
+    position: absolute;
+    right : -25px ;
+    bottom: 30px; 
+}
+.item__ser{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.item__ser .text p{
+    padding-top: 75px;
+}
+.col-4{
+    width: 33.33%;
 }
