@@ -16,7 +16,43 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.col-6{
+    width :50%;   
+}
+[class*="col-"]{  
+    /* cac class co ten bat dau bang col- */
+    float: left;
+    /* padding: 15px; */
+    border:  15px  ;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.appear{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    [class*="col-"]{
+        width: 100%;
+    } 
+    .appear{
+        display: block;
+        text-align: center;
+        border: 20px solid white;
+       
+    }
+}
+
+@media only screen and(max-width:1200px) {
+    
+}
+
+
+
 h6{ font-size:  18px;}
+
 ul{
     list-style-type: none;
 }

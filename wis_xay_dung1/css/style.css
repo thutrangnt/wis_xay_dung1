@@ -25,6 +25,7 @@
     position: relative;
     
 }
+
 .icon_box{
     color: var(--icon-color);
     margin: 0 20px 0 0;
@@ -38,6 +39,12 @@
     border-right: 1px solid #f05523;
     height: 45px ;
     left: 50px;
+}
+@media only screen and (max-width :768px){
+    .header__upper , .menu{
+        display: none;
+    }
+    
 }
 .header__lower{
     display: flex;
@@ -125,10 +132,12 @@
 .title p{
     word-spacing: 2px;
     padding-left: 8px;
-    font-weight: ;
+    
+    color: var(--icon-color);
 
 }
 .text{
+    color: #555555;
     line-height: 30px;
 }
 .content__column{
@@ -137,7 +146,7 @@
   }
 .content__column h1{
     letter-spacing: 5px;
-    font-family: 
+    
 }  
 .content img{
     max-width: 100%;
@@ -165,20 +174,7 @@
 /* End header */
 /* Secction */
 
-.col-6{
-    width :50%; 
-}
-[class*="col-"]{  
-    /* cac class co ten bat dau bang col- */
-    float: left;
-    /* padding: 15px; */
-    border:  15px  ;
-}
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
-}
+
 .section__about{
     padding: 100px 0;
     position: relative;
@@ -188,6 +184,9 @@
 .grid__about{
     background-image:radial-gradient(0,rgba(60,60,60,0.05), rgba(60,60,60,0.05)),
     url(http://themerange.net/html/kanstr/images/background/pattern-1.png);
+    /* display: inline-block;
+    flex-wrap: wrap; */
+
 }
 .item__about{
     padding: 70px 30px;
@@ -195,7 +194,7 @@
 }
 .item__about a{
     border-top-left-radius: 10px ;
-    border: ;
+    
 }
 .item__about h1{
     letter-spacing: 3px;
@@ -231,21 +230,20 @@
     color: var(--text-strong);
     font-weight: 700;
 }
-.count__text{
+.count__box{
     font-size: 60px;
 }
 .box__inner h6{
     margin-top:  10px;
     text-transform: uppercase;
 }
-
+/* End about us */
+/* Our Services */
 .item__ser{
     display: flex;
     justify-content: space-between;
-    
-}
-.item__ser .text p{
-    padding-top: 75px;
+    /* position: relative; */
+    flex-wrap: wrap;
 }
 .col-4{
     width: 33.33%;
