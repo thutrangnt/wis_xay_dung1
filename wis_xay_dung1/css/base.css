@@ -1,7 +1,7 @@
 :root{
     --text-color : #333;
     --icon-color :#f05523;
-
+    --text-strong: white ;
 }
 
 *{
@@ -10,11 +10,13 @@
     margin: 0 ;
 }
 html{
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.6 rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+h6{ font-size:  18px;}
 ul{
     list-style-type: none;
 }

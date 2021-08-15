@@ -105,9 +105,13 @@
 /* Banner */
 .content{
     color: white;
-    background: radial-gradient(0,rgba(61, 60, 60,0.5),rgba(61, 60, 60,0.5))  ,url(../img/logo/banner.jpg) ;
-    background-size: 100%;
-   
+    background: radial-gradient(0,rgba(61, 60, 60,0.5),rgba(61, 60, 60,0.5))  ,url(/wis_xay_dung1/img/logo/image-2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 90px 0 90px;
+    
 }
  
 .title{
@@ -128,16 +132,19 @@
     line-height: 30px;
 }
 .content__column{
-    padding: 200px 90px; 
+    /* padding: 200px 90px 0 90px;  */
     
   }
 .content__column h1{
     letter-spacing: 5px;
     font-family: 
 }  
+.content img{
+    max-width: 100%;
+    
+}
 .item_video{
     color:var(--icon-color);
-    font-size: 50px;
     
 }
 
@@ -152,7 +159,7 @@
     padding: 10px 30px 0px 0px;
 }
 .content__btn--style p{
-   padding-top: 25px;
+   padding-top: 30px;
    margin-left: -25px ;
 }
 /* End header */
@@ -179,7 +186,8 @@
     background-clip:padding-box;
 }
 .grid__about{
-    background-color: rgba(60,60,60,0.1);
+    background-image:radial-gradient(0,rgba(60,60,60,0.05), rgba(60,60,60,0.05)),
+    url(http://themerange.net/html/kanstr/images/background/pattern-1.png);
 }
 .item__about{
     padding: 70px 30px;
@@ -195,13 +203,42 @@
 }
 .item__about--img img{
     width: 100%;
-    
+   
+}
+.item__about--img{
+    position: relative;
 }
 .box__about{
     position: absolute;
     right : -25px ;
     bottom: 30px; 
 }
+.box__about::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right:0px;
+    bottom: -25px;
+    border-top: 25px solid #111111;
+    border-right: 25px solid transparent;
+}
+.box__inner{
+    background-color: rgba(240,85,35,0.9);
+    padding: 30px 45px;
+    text-align: center;
+    border-radius: 20px 0 0 0;
+    color: var(--text-strong);
+    font-weight: 700;
+}
+.count__text{
+    font-size: 60px;
+}
+.box__inner h6{
+    margin-top:  10px;
+    text-transform: uppercase;
+}
+
 .item__ser{
     display: flex;
     justify-content: space-between;
