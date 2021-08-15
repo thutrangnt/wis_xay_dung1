@@ -112,7 +112,7 @@
 /* Banner */
 .content{
     color: white;
-    background: radial-gradient(0,rgba(61, 60, 60,0.5),rgba(61, 60, 60,0.5))  ,url(/wis_xay_dung1/img/logo/image-2.jpg) ;
+    background: radial-gradient(0,rgba(61, 60, 60,0.5),rgba(61, 60, 60,0.5))  ,url(/wis_xay_dung1/img/logo/image-1.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
