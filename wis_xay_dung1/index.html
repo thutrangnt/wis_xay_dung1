@@ -27,7 +27,7 @@
                             <img src="img/logo/logo.png" alt="">
                         </a>
                     </div>
-                    
+
                     <!-- Logo -->
                     <div class="container__heading__right grid__row">
                         <!-- container__heading__right -->
@@ -63,19 +63,30 @@
                 </div>
                 <!-- End header__upper -->
             </div>
+            <!-- Mobile app -->
             <div class="appear">
                 <a href="index.html" class="logo">
-                    <img src="img/logo/logo.png" alt="">
+                    <img src="img/logo/logo.png" alt="" style="border: 25px solid white;">
                 </a>
-                <div>
-                    <ul>
-                        <li> <span class=""></span></li>
-                        <li></li>
+                <div style="border-top: 1px solid #dddddd;"></div>
+                <div class="appear--menu">
+                    <ul style="display: flex;">
+                        <li class="appear--menu--item"> <a href=""><i class="fas fa-home"></i></a></li>
+                        <li class="appear--menu--item">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class=""><a href="" style="color:white"><i class="fas fa-search"></i></a>
+                        </li>
                     </ul>
-                    <span> <i class="fas fa-bars"></i></span>
-                    
+                    <div class="appear--menu--action">
+                        <a href=""><i class="fas fa-bars"></i></a>
+                    </div>
+
+
                 </div>
             </div>
+            <!-- Ènd mobile app -->
+
             <div class="header__lower grid">
                 <ul class="menu">
 
@@ -124,8 +135,8 @@
                     <li class="menu__item--search ">
                         <a href="" class="dropbtn item_text" style="color:azure">Get A Quote</a>
                     </li>
-                    <li class="menu__item--search dropbtn item_icon"><a href="" style="color: #f05523"><i
-                                class="fas fa-search"></i></a>
+                    <li style="background-color: black;" class="menu__item--search dropbtn"><a href=""
+                            style="color:white"><i class="fas fa-search"></i></a>
                     </li>
 
                 </ul>
@@ -134,29 +145,30 @@
             <div class="content grid__full-width">
                 <div class="content__column">
                     <!-- <div class="col-6"> -->
-                        <div class="title">
-                            <span> <i class="fas fa-bars"></i></span>
-                            <span>
-                                <p style="color: white;">Genral Contracting</p>
-                            </span>
-                        </div>
-                        <h1>
-                            Building Everything <br>
-                             You Needs
-                        </h1>
-                        <div class="text">
-                            <p style="color: white;">Build a Better Way Delivering Projects in Ways <br>
-                                that Can't be Duplicated</p>
-                        </div>
-                        <ul class="content__btn--style">
-                            <li>
-                                <a href="" class="dropbtn item_text">Read More</a>
-                            </li>
-                            <li>
-                                <a href="" class="item_video" style="font-size:60px;"><i class="fas fa-play-circle"></i></a>
-                            </li>
-                            <p>See Our Achivity</p>
-                        </ul>
+                    <div class="title">
+                        <span> <i class="fas fa-bars"></i></span>
+                        <span>
+                            <p style="color: white;">Genral Contracting</p>
+                        </span>
+                    </div>
+                    <h1>
+                        Building Everything <br>
+                        You Needs
+                    </h1>
+                    <div class="text">
+                        <p style="color: white;">Build a Better Way Delivering Projects in Ways <br>
+                            that Can't be Duplicated</p>
+                    </div>
+                    <ul class="content__btn--style">
+                        <li>
+                            <a href="" style="border-radius: 4px;" class="dropbtn item_text">Read More</a>
+                        </li>
+                        <li>
+                            <a href="" class="item_video" style="font-size:60px;"><i
+                                    class="fas fa-play-circle ripple"></i></a>
+                        </li>
+                        <p>See Our Achivity</p>
+                    </ul>
                     <!-- </div> -->
                     <!-- <div class="col-6">
                         <img src="img/logo/content-image-1.png" style="display: block; max-width: auto;" alt="">
@@ -203,8 +215,8 @@
                     <div class="box__about">
                         <div class="box__inner">
                             <div class="count__box">
-                                <span class="count-text" >25</span>+
-                                
+                                <span class="count-text" data-speed="3500" data-stop="25">25</span>+
+
                             </div>
                             <h6>YEAR OF <br>
                                 EXPERIENCE</h6>
@@ -225,7 +237,7 @@
                         <p>OUR SERVICES</p>
                     </span>
                 </div>
-                <h1>Construction Solutions <br>
+                <h1 style="line-height: 50px;">Construction Solutions <br>
                     For Residentials & Industries!</h1>
             </div>
 
@@ -236,12 +248,59 @@
             </div>
 
         </div>
-        <div class="row pattern-layer">
-            <div class="col-4">
-               
+        <div class="service-carousel ">
+            <div id="slideshow">
+                <div class="slide-wrapper">
+                    <div class="slide">
+                        <!-- Service block -->
+                        <div class="service-block">
+                            <div class="inner-block">
+                                <div class="services-block-content">
+                                    <h4><a href="">Expert <br> Mechanical</a></h4>
+                                    <span class="icon"><i class="fas fa-truck-loading"></i></span>
+                                </div>
+                                <div class="text">
+                                    We will work with you to make small or large changes so you get the house of your
+                                    dreams
+                                </div>
+                                <a href="" class="read-more">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <!-- Service block -->
+                        <div class="service-block">
+                            <div class="inner-block">
+                                <div class="services-block-content">
+                                    <h4><a href="">Expert <br> Mechanical</a></h4>
+                                    <span class="icon"><i class="fas fa-truck-loading"></i></span>
+                                </div>
+                                <div class="text">
+                                    We will work with you to make small or large changes so you get the house of your
+                                    dreams
+                                </div>
+                                <a href="" class="read-more">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
+        <!-- demo -->
+
+
+
+
+
+        <!-- end demo -->
     </section>
+    <!-- End Services -->
     </div>
     <script src="https://kit.fontawesome.com/e8f697cee1.js" crossorigin="anonymous"></script>
 </body>

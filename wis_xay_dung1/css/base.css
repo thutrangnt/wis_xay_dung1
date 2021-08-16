@@ -12,12 +12,15 @@
 html{
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.6 rem;
+    line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 .col-6{
     width :50%;   
+}
+.col-4{
+    width: 33.33%;
 }
 [class*="col-"]{  
     /* cac class co ten bat dau bang col- */
@@ -30,20 +33,16 @@ html{
     clear: both;
     display: table;
 }
-.appear{
-    display: none;
-}
+/* App mobile */
 @media only screen and (max-width: 768px) {
+    .section__about, .section__services{
+        padding: 15px;
+    }
     [class*="col-"]{
         width: 100%;
     } 
-    .appear{
-        display: block;
-        text-align: center;
-        border: 20px solid white;
-       
-    }
 }
+/* end app mobile */
 
 h6{ font-size:  18px;}
 
