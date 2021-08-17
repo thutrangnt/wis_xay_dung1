@@ -3,7 +3,7 @@
 .container__heading{
     display:inline-block;
     justify-content: space-between;
-    border-bottom:1px solid #f05523;
+    border-bottom:1px solid #dddd;
     /* position: fixed; */
 }
 .container__heading__left{
@@ -18,25 +18,16 @@
 }
 .upper__box{
     display: flex;
-    margin: 0 0 0 25px ;
-    padding: 0 25px 0 65px;
+    margin-right:18px ;
+    padding: 0px 25px 0px 20px;
     position: relative;
+    border-right: 1px solid #dddddd ;
     
 }
-
 .icon_box{
     color: var(--icon-color);
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
     font-size: 35px;
-}
-
-.upper__box--seperate::after{
-    content:"" ;
-    display: block;
-    position: absolute;
-    border-right: 1px solid #f05523;
-    height: 45px ;
-    left: 50px;
 }
 .appear , .appear--menu{
     display: none;
@@ -99,10 +90,29 @@
     font-weight: bold;
     /* border-top: 5px solid var(--icon-color) ; */
 }
+/* Tao hieu ung khi hover vafo menu */
+a.a-hover{
+    padding: 25px 0;
+}
+a,a:visited,a:hover,a:active{
+    position: relative;
+}
+.a-hover::before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    top: 0px;
+    height: 5px;
+    right: 0px;
+    background-color: #f05523;
+    opacity: 0;
+}
+.a-hover:hover:before{
+    opacity: 1;
+}
 
-.dropdown :hover .dropbtn{
+.dropdown:hover .dropbtn{
     display: inline-block ;
-   
 }
 .dropdown-content a {
     padding: 12px 16px ;
@@ -285,62 +295,59 @@
 }
 /* End about us */
 /* Our Services */
-#slideshow {
-    overflow: hidden;
-    with:100%
-    margin: 0 auto;
-}
-.slide-wrapper {
-    width: 2912px;
-    -webkit-animation: slide 10s infinite;  
-  }
-.slide {
-    float: left;
-    height: 510px;
-    width: ;
-}
-@-webkit-keyframes slide {
-    20% {margin-left: 0px;}
-    30% {margin-left: -728px;}
-    50% {margin-left: -728px;}
-    60% {margin-left: -1456px;}
-    80% {margin-left: -1456px;}
-  }
-.service-block{
-
-}
-.inner-block{
-    padding: 30px 30px 40px;
-    /* border: 1px  solid #555555; */
-    border-bottom: 4px solid var(--icon-color) ;
-    box-shadow: 0px 0px 15px rgb(0,0,0);
-    /* background-color: #555555; */
+.section__services{
     position: relative;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.tabs{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    
+}
+.tab-item{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 0px 7px;
+    border-radius: 50px;
+    border: 2px solid #111111;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;  
+    display: inline-block;/* ngăn lựa chọn trong văn bản*/
+   
+}
+.tab-item:hover, .tab-item.active{
+    background-color: var(--icon-color);
+    border: #f05523;
+    transition: all .2s ease;
+}
+.tab-pane{
+    display: none;
+}
+.tab-pane.active{
+    display: block;
+}
 
+
+/* demo */
+.owl-dots{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
 }
-.inner-block  :hover{
-    
-}
-.services-block-content{
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 20px;
-    
-}
-.icon{
-    font-size: 50px;
-    color: var(--icon-color);
-}
-.read-more{
-    position: absolute;
-    right: 30px;
-    bottom: -25px;
-    background-color:var(--text-color);
-    color: var(--text-strong);
-    font-weight: 600 ;
-    padding: 12px 24px;
-    border-radius: 15px 0px  0px 0px;
-    border-right: 2px solid var(--icon-color);
+.owl-dot{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin: 0px 7px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 2px solid #333;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    user-select: none;
 
 }

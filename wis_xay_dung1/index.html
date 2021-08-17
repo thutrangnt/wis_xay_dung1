@@ -49,7 +49,7 @@
                                     </strong></li>
                             </ul>
                         </div>
-                        <div class="upper__box upper__box--seperate">
+                        <div class="upper__box upper__box--seperate" style="border-right: none;">
                             <div class="icon_box"> <span><i class="fas fa-map-marker-alt icon__size"></i></span></div>
                             <ul>
                                 <li>1428 Callison Laney Building</li>
@@ -88,10 +88,26 @@
             <!-- Ènd mobile app -->
 
             <div class="header__lower grid">
-                <ul class="menu">
+                <ul class="menu" style="padding: 0px 20px;">
 
                     <li class="dropdown menu__item">
-                        <a href=" " class="dropbtn">Home</a>
+                        <a href=" " class="dropbtn a-hover ">Home</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown menu__item ">
+                        <a href=" " class="dropbtn  a-hover">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown menu__item ">
+                        <a href=" " class="dropbtn  a-hover">Services</a>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -99,7 +115,7 @@
                         </div>
                     </li>
                     <li class="dropdown menu__item">
-                        <a href=" " class="dropbtn">About Us</a>
+                        <a href=" " class="dropbtn  a-hover ">Project</a>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -107,23 +123,7 @@
                         </div>
                     </li>
                     <li class="dropdown menu__item">
-                        <a href=" " class="dropbtn">Services</a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown menu__item">
-                        <a href=" " class="dropbtn">Project</a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown menu__item">
-                        <a href=" " class="dropbtn">Contact</a>
+                        <a href=" " class="dropbtn  a-hover ">Contact</a>
                         <div class="dropdown-content">
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
@@ -246,63 +246,48 @@
                     <br> to form objects systems organizations.
                 </p>
             </div>
-
-        </div>
-        <div class="service-carousel ">
-            <div id="slideshow">
-                <div class="slide-wrapper">
-                    <div class="slide">
-                        <!-- Service block -->
-                        <div class="service-block">
-                            <div class="inner-block">
-                                <div class="services-block-content">
-                                    <h4><a href="">Expert <br> Mechanical</a></h4>
-                                    <span class="icon"><i class="fas fa-truck-loading"></i></span>
-                                </div>
-                                <div class="text">
-                                    We will work with you to make small or large changes so you get the house of your
-                                    dreams
-                                </div>
-                                <a href="" class="read-more">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <!-- Service block -->
-                        <div class="service-block">
-                            <div class="inner-block">
-                                <div class="services-block-content">
-                                    <h4><a href="">Expert <br> Mechanical</a></h4>
-                                    <span class="icon"><i class="fas fa-truck-loading"></i></span>
-                                </div>
-                                <div class="text">
-                                    We will work with you to make small or large changes so you get the house of your
-                                    dreams
-                                </div>
-                                <a href="" class="read-more">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+        </div> 
+        
+        <!-- Tab content -->
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <h2>Apartment Design</h2>
+                <p>123</p>
             </div>
-
+            <div class="tab-pane ">
+                <h2>Repair Weilding</h2>
+                <p>123</p>
+            </div>
+            <div class="tab-pane">
+                <h2>Apartment Design</h2>
+                <p>123</p>
+            </div>
+            <div class="tab-pane ">
+                <h2>Apartment Design</h2>
+                <p>123</p>
+            </div>
         </div>
-        <!-- demo -->
-
-
-
-
-
-        <!-- end demo -->
-    </section>
+        <!-- tabs item -->
+        <div class="tabs">
+            <div class="tab-item active">      
+                <span></span>
+            </div>
+            <div class="tab-item ">      
+                <span></span>
+            </div>
+            <div class="tab-item ">      
+                <span></span>
+            </div>
+            <div class="tab-item ">      
+                <span></span>
+            </div>
+            
+        </div>
+        
     <!-- End Services -->
     </div>
     <script src="https://kit.fontawesome.com/e8f697cee1.js" crossorigin="anonymous"></script>
+    <script src="scr.js"></script>
 </body>
 
 </html>
