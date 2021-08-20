@@ -16,34 +16,6 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-.col-6{
-    width :50%;   
-}
-.col-4{
-    width: 33.33%;
-}
-[class*="col-"]{  
-    /* cac class co ten bat dau bang col- */
-    float: left;
-    /* padding: 15px; */
-    border:  15px  ;
-}
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-/* App mobile */
-@media only screen and (max-width: 768px) {
-    .section__about, .section__services{
-        padding: 15px;
-    }
-    [class*="col-"]{
-        width: 100%;
-    } 
-}
-/* end app mobile */
-
 h6{ font-size:  18px;}
 
 ul{
@@ -61,7 +33,7 @@ a :hover{
  color: var(--text-color);   
 }
 .grid{
-    width: 1190px ;
+    width: 1200px ;
     max-width: 100%;
     margin: 0 auto;
    
@@ -72,4 +44,53 @@ a :hover{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+.col-6{
+    width :50%;   
+}
+.col-12{
+    width: ;
+}
+.col-3{
+    width: 25%;
+}
+[class*="col-"]{  
+    /* cac class co ten bat dau bang col- */
+    float: left;
+    padding:0px 15px;
+    border:  15px  ;
+    min-height: 1px;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap ;
+    margin: 0px -15px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* @media screen and (max-width: 1200px) {
+    [class*="col-"]{
+        width: 25%;
+        padding: 0px 15px;
+    } 
+} */
+
+@media screen and (max-width: 992px) {
+    [class*="col-"]{
+        width: 50%;
+        padding: 0px 15px;
+    } 
+}
+@media only screen and (max-width: 768px) {
+    .section__about, .section__services{
+        padding: 15px;
+    }
+    [class*="col-"]{
+        width: 100%;
+        padding: 0px 15px;
+    } 
 }
