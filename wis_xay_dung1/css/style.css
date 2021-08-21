@@ -334,7 +334,8 @@ a,a:visited,a:hover,a:active{
     box-shadow: 0px 0px 15px  ;
     background-color: var(--text-strong);
 }
-.pattern-layer{
+
+.tab-content .inner-box .pattern-layer{
     position: absolute;
     left: 0px;
     top: 0px;
@@ -520,20 +521,7 @@ a,a:visited,a:hover,a:active{
     border-left: 2px solid var(--icon-color);
     background-color: rgba(255,255,255,0.1);
 }
-.fadeInLeft{
-    animation-fill-mode:both ;
-    animation-delay: 0.2s ;
-} 
-@keyframes fadeInLeft{
-    0%{
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
+
 .fact-counter .column .inner .content-fact{
     position: relative;
     padding-left: 90px;
@@ -541,13 +529,35 @@ a,a:visited,a:hover,a:active{
 }
 .fact-counter .column .inner .icon{
     position: absolute;
-    left: 0px;
+    left: 8px;
     top: 0px;
+    transition: all 0.2s linear;
+
+}
+.fact-counter .column .inner:hover .icon{
+    color: var(--text-strong);
+   
+}
+.inner:hover .icon{
+    visibility: visible;
+    animation-duration: 0.5s ;
+    animation-delay: 0.2s;
+    animation-name: ex ;
+}
+
+@keyframes ex{
+    0%,100%{        
+        font-size: 100%;
+    }
+    50%
+    {
+        font-size: 0%;
+    }
 }
 .fact-counter .column .inner .counter-title{
     position: relative;
     color: var(--text-strong);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;  
     margin-bottom: 7px;
 }
@@ -557,4 +567,85 @@ a,a:visited,a:hover,a:active{
     color: var(--text-strong);
     font-size: 36px;
     line-height: 1em;
+}
+/* Skill Section */
+.skill-section{
+    position: relative;
+}
+.skill-section .auto-container{
+
+}
+.skill-section .inner-container{
+    position: relative;
+    padding:  60px;
+    margin-top: -210px;
+    background-color:var(--text-strong) ;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+.skill-section .image-column .inner-column{
+    position: relative;
+    padding-right: 40px ;
+}
+.skill-section .image-column .image {
+    position: relative;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+.skill-section .inner-column .image .pattern-layer{
+    background-image: url(/wis_xay_dung1/img/logo/pattern-2.png);
+    position: absolute;
+    top :0px;
+    left: 0px;
+    width: 246px;
+    height: 246px;
+   
+}
+.skill-section .image-column .image img{
+    position: relative;
+    width: 100%;
+    display: block
+}
+.skill-section .image-column .image .text{
+    position: absolute;
+    background-color: var(--icon-color);
+    color: var(--text-strong);
+    left: 0px;
+    bottom: 30px;
+    border-radius: 0px 50px 50px 0px ;
+    padding: 10px 30px ; 
+}
+.skill-section .image-column .image .text::before{
+    position:absolute;
+    content: "";
+    display: block;
+    left: 0px;
+    bottom: -30px;
+    border-top: 30px solid #a2a2a2;
+    border-left: 30px solid transparent ;
+}
+.skill-column .sec-title .title .separator::before{
+    background-color: var(--text-color);
+}
+.skill-column .sec-title .title .separator::after{
+    background-color: var(--text-color);
+}
+.skill-column .sec-title{
+    text-align: left;
+}
+.skill-column .sec-title h2{
+    color: var(--text-color);
+    font-weight: 700 ;
+}
+.skill-column .sec-title .text{
+    margin-top: 15px;
+}
+.skill-item{
+    margin-bottom: 20px;
+    padding-bottom: 6px ;
+    border-bottom: 2px solid #d7d7d7;
+}
+.skills .skill-item .skill-header{
+    margin-bottom: 12px;
+   
 }

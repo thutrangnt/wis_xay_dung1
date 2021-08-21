@@ -49,7 +49,7 @@ a :hover{
     width :50%;   
 }
 .col-12{
-    width: ;
+    width: 100% ;
 }
 .col-3{
     width: 25%;
@@ -60,7 +60,7 @@ a :hover{
     padding:0px 15px;
     border:  15px  ;
     min-height: 1px;
-    width: 100%;
+    /* width: 100%; */
 }
 .row{
     display: flex;
@@ -72,19 +72,23 @@ a :hover{
     clear: both;
     display: table;
 }
-/* @media screen and (max-width: 1200px) {
+/* @media screen and (max-width:1400px) {
     [class*="col-"]{
         width: 25%;
         padding: 0px 15px;
     } 
-} */
+}*/
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     [class*="col-"]{
         width: 50%;
         padding: 0px 15px;
-    } 
-}
+    }
+    .skill-section .inner-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+} 
 @media only screen and (max-width: 768px) {
     .section__about, .section__services{
         padding: 15px;
@@ -93,4 +97,9 @@ a :hover{
         width: 100%;
         padding: 0px 15px;
     } 
+}
+@media only screen and (max-width: 768px) {
+    .skill-section .image-column{
+        order: 2;
+    }
 }
